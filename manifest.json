@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Puzzle Jingle",
+    "version": "1.0",
+    "description": "Plays a jingle when the puzzle is solved",
+    "permissions": [],
+    "content_scripts": [
+      {
+        "matches": [
+            "*://www.nytimes.com/games/connections",
+            "*://www.nytimes.com/games/strands"
+            ],
+        "js": ["content.js"]
+      }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": ["strut.mp3"],
+            "matches": [
+            "*://www.nytimes.com/*"
+            ]
+        }
+    ]
+}
+  
